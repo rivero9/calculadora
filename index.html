@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculadora</title>
+    <link href="https://fonts.googleapis.com/css2?family=Titillium+Web:wght@600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles/normalize.css">
+    <link rel="stylesheet" href="styles/style.css">
+</head>
+<body>
+    <div class="container">
+        <div class="container-calculated">
+            <div class="scrn">
+            <span id="btn-open-rcord" draggable="true"></span>
+            <div class="container-input">
+                <div id="input" style="font-size: 9vh;"></div>
+            </div>
+            <h1 id="prev-result"></h1>
+            <span class="flash"></span>
+            </div>
+                <div class="container-keyboard">
+                <div class="btn-keys-II down"></div>
+                    <div class="keyboard-hddn">
+                        <button class="cbrt rt trim oprt orng btn-hddn container-ico" id="raiz-cubica">
+                            <sup>3</sup>
+                            <img src="styles/icons/raiz.png" alt="raiz-cubica" class="ico">
+                        </button>
+                        <button class="xp oprt orng btn-hddn" id="2">x<sup>2</sup></button>
+                        <button class="xpY xp trim oprt orng btn-hddn" id="^">x<sup>y</sup></button>
+                        <button class="prct oprt orng btn-hddn" id="%">%</button>
+                    </div>
+                    <div class="keyboard">
+                        <button  class="sqrt rt oprt trim orng show container-ico">
+                            <img src="styles/icons/raiz.png" alt="raiz-cuadrada" class="ico">
+                        </button>
+                        <button class="clr orng show">C</button>
+                        <button class="dlt orng show container-ico">
+                            <img src="styles/icons/delete.png" alt="borrar" class="ico ico-delete">
+                        </button>
+                        <button class="gtRs orng show">=</button>
+                        <button class="key" id="7">7</button>
+                        <button class="key" id="8">8</button>
+                        <button class="key" id="9">9</button>
+                        <button class="addUp oprt orng" id="+">+</button>
+                        <button class="key" id="4">4</button>
+                        <button class="key" id="5">5</button>
+                        <button class="key" id="6">6</button>
+                        <button class="subtr oprt orng" writable id="-">-</button>
+                        <button class="key" id="1">1</button>
+                        <button class="key" id="2">2</button>
+                        <button class="key" id="3">3</button>
+                        <button class="mlt oprt orng" id="x">x</button>
+                        <button class="key" id="0">0</button>
+                        <button class="key" id=".">.</button>
+                        <button class="container-ico" id="pi">
+                            <img src="styles/icons/pi.png" alt="pi" class="ico">
+                        </button>
+                        <button class="split oprt orng" id="/">/</button>
+                    </div>
+                </div>
+        </div>
+        <div class="container-record">
+            <div class="record">
+                <button id="btn-clean">
+                </button>
+                <div id="elements">
+                </div>
+                <div id="btn-close" draggable="true"></div>
+            </div>
+        </div>
+    </div>
+    
+    <script src="main.js"></script>
+</body>
+</html>
